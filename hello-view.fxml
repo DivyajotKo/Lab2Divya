@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="529.0" prefWidth="536.0" spacing="20.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1divyajot.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Button onAction="#onHelloButtonClick" text="Fetch Data" />
+   <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="Id" prefWidth="75.0" text="Id" />
+       <TableColumn fx:id="Name" prefWidth="65.33331298828125" text="Name" />
+         <TableColumn fx:id="Doctor" prefWidth="65.33331298828125" text="Doctor" />
+         <TableColumn fx:id="Mail" prefWidth="65.33331298828125" text="Mail" />
+     </columns>
+   </TableView>
+   <AnchorPane prefHeight="63.0" prefWidth="425.0">
+      <children>
+         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="19.0" mnemonicParsing="false" onAction="#insertdata" text="Insert" />
+         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="19.0" mnemonicParsing="false" onAction="#updatedata" text="Update" />
+         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="19.0" mnemonicParsing="false" onAction="#deletedata" text="Delete" />
+         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="393.0" layoutY="19.0" mnemonicParsing="false" onAction="#loaddata" text="View" />
+      </children>
+   </AnchorPane>
+   <Label text="Name" />
+   <TextField fx:id="iName" />
+   <Label text="Doctor" />
+   <TextField fx:id="iDoctor" />
+   <Label text="Mail" />
+   <TextField fx:id="iMail" />
+</VBox>
